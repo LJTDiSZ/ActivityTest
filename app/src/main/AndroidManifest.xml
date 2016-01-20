@@ -8,13 +8,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".FirstActivity"
+        <activity android:name=".FirstActivity" android:theme="@android:style/Theme.Holo"
             android:label="This is FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".SecondActivity">
+            <intent-filter>
+                <action android:name="com.jcc.activitytest.ACTION_START" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.jcc.activitytest.MY_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NormalActivity"/>
+        <activity android:name=".DialogActivity" android:theme="@android:style/Theme.Dialog"/>
     </application>
 
 </manifest>
