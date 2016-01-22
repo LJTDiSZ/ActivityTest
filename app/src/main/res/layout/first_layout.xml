@@ -17,4 +17,8 @@
         android:text="Start DialogActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Button android:id="@+id/start_message_activity"
+        android:text="Start MessageActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

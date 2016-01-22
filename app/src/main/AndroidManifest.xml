@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jcc.activitytest">
 
@@ -7,23 +8,29 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".FirstActivity" android:theme="@android:style/Theme.Holo"
-            android:label="This is FirstActivity">
+        <activity
+            android:name=".FirstActivity"
+            android:label="This is FirstActivity"
+            android:theme="@android:style/Theme.Holo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".SecondActivity">
             <intent-filter>
                 <action android:name="com.jcc.activitytest.ACTION_START" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.jcc.activitytest.MY_CATEGORY" />
             </intent-filter>
         </activity>
-        <activity android:name=".NormalActivity"/>
-        <activity android:name=".DialogActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".NormalActivity" />
+        <activity
+            android:name=".DialogActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".MessageActivity"></activity>
     </application>
 
 </manifest>

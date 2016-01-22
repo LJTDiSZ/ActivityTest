@@ -55,6 +55,15 @@ public class FirstActivity extends BaseActivity {
             }
         });
 
+        Button startMessageActivity = (Button)findViewById(R.id.start_message_activity);
+        startMessageActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FirstActivity.this, MessageActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Log.d(TAG, "onCreate@" + this.toString());
 
         if (savedInstanceState != null){
